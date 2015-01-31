@@ -1,5 +1,5 @@
         <div class="page-header">
-        <h1>About us <small> everything you need to know</small></h1>
+        <h1>Acerda de .....  <small> Sitio desarollado por tanto tanto</small></h1>
         </div>
 	<div class="row-fluid">
      <div class="span9">

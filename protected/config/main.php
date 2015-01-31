@@ -8,7 +8,9 @@
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'My Web Application',
-
+	'language'=>'es', //Esto se debe de agregar
+	'sourceLanguage'=>'en', //Esto se debe de agregar
+ 	'charset'=>'utf-8',
 	'theme'=>'hebo',
 
 	// preloading 'log' component
@@ -22,18 +24,22 @@ return array(
 
 	'modules'=>array(
 		// uncomment the following to enable the Gii tool
-		/*
+		
 		'gii'=>array(
 			'class'=>'system.gii.GiiModule',
-			'password'=>'Enter Your Password Here',
+			'password'=>'pass',
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
 			'ipFilters'=>array('127.0.0.1','::1'),
 		),
-		*/
+		
 	),
 
 	// application components
 	'components'=>array(
+
+		'coreMessages'=>array(
+ 		'basePath'=>'protected/messages'
+		),
 		'user'=>array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
