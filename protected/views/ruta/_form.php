@@ -33,9 +33,12 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'ruta_complejidad'); ?>
-		<?php echo $form->textField($model,'ruta_complejidad',array('size'=>5,'maxlength'=>5)); ?>
+		<?php //echo $form->textField($model,'ruta_complejidad',array('size'=>5,'maxlength'=>5)); ?>
+		<?php echo $form->dropDownList($model,'ruta_complejidad',array('1'=>'Primeros Viajes','2'=>'Aventureros','3'=>'Experimentados' ),array('onchange' => 'opcion();') ); ?>
 		<?php echo $form->error($model,'ruta_complejidad'); ?>
+
 	</div>
+	<label id='label_select'></label>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'ruta_dias'); ?>
@@ -50,3 +53,14 @@
 <?php $this->endWidget(); ?>
 
 </div><!-- form -->
+
+
+<script>
+	function opcion() {
+		d = document.getElementById("Ruta_ruta_complejidad").value;
+		if(d==1)document.getElementById('label_select').innerHTML = 'Ruta para principiantes, ideal para mi primer viaje!';
+		if(d==2)document.getElementById('label_select').innerHTML = 'Ruta para viajeros con un minimo de experiencia!';
+		if(d==3)document.getElementById('label_select').innerHTML = 'Ruta para expertos, requiere gran preparacion !';
+		//alert(d);
+	}
+</script>

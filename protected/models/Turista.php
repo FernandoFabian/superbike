@@ -72,15 +72,15 @@ class Turista extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'tur_codigo' => 'Tur Codigo',
-			'tur_alias' => 'Tur Alias',
-			'tur_nombre' => 'Tur Nombre',
-			'tur_direccion' => 'Tur Direccion',
-			'tur_telefono' => 'Tur Telefono',
-			'tur_fecha_nac' => 'Tur Fecha Nac',
-			'tur_email' => 'Tur Email',
-			'tur_pass' => 'Tur Pass',
-			'tur_nacionalidad' => 'Tur Nacionalidad',
+			'tur_codigo' => 'Codigo',
+			'tur_alias' => 'Alias',
+			'tur_nombre' => 'Nombre',
+			'tur_direccion' => 'Direccion',
+			'tur_telefono' => 'Telefono',
+			'tur_fecha_nac' => 'Fecha de Nacimiento',
+			'tur_email' => 'Email',
+			'tur_pass' => 'Password',
+			'tur_nacionalidad' => 'Nacionalidad',
 		);
 	}
 
